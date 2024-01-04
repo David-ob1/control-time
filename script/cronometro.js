@@ -7,7 +7,7 @@
     let runningTime = 0
 
     const playPause = () => {
-        const isPaused = !playPauseButton.classList("running")
+        const isPaused = !playPauseButton.classList.contains("running")
 
         if(isPaused){
 
@@ -56,7 +56,7 @@
     }
 
     const calculateTime = runningTime => {
-        const total_seconds = Math.floor(runningTime / 100)
+        const total_seconds = Math.floor(runningTime / 1000)
         const total_minutes = Math.floor(total_seconds / 60)
 
         const display_seconds = (total_seconds % 60).toString().padStart(2,"0")

@@ -19,7 +19,7 @@ main{
 
 .circle::before{
     content:"";
-    border-radius:50%;
+    border-radius:50%;      
     z-index: -1;
     position: absolute;
     width: 160px;
@@ -44,7 +44,7 @@ main{
 
 @keyframes rotacion {
     from{ transform: rotate(-90deg) translateX(60px);}
-    tp { transform: rotate(270deg) translateX(60px);}
+    to { transform: rotate(270deg) translateX(60px);}
     
 }
 
@@ -62,7 +62,7 @@ main{
     border-color: transparent transparent transparent #fff;
     transition: 100ms all ease;
     will-change: border-width;
-    border: solid;
+    border-style: solid;
 }
 
 .running {
